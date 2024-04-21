@@ -3,7 +3,8 @@ variable "sg_name" {
 }
 
 variable "sg_description" {
-  
+  default = ""
+  type = string
 
 }
 
@@ -18,13 +19,16 @@ variable "environment" {
 
 variable "common_tags" {
   type = map 
+  default = {}
   
 }
 
 variable "sg_tags" {
-  
+  type = map 
+  default = {}
 }
 
 variable "vpc_id" {
+
   
 }
